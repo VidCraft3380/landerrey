@@ -1,0 +1,450 @@
+$url: "../../..";
+
+@import "../../components/config/inc/style.scss";
+
+main {
+    .main__welcome {
+        display: block;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        .welcome__image {
+            display: block;
+            width: 100vw;
+            height: 100vh;
+            img {
+                display: block;
+                width: 100vw;
+                height: 100vh;
+                object-fit: fill;
+                z-index: -1;
+                filter: brightness(90%);
+            }
+        }
+    }
+    .main__last-video {
+        display: block;
+        width: 100%;
+        margin-top: $space75;
+        margin-bottom: $space75;
+        h1 {
+            display: block;
+            width: 100%;
+            margin-bottom: $space20;
+            text-align: center;
+        }
+        .last-video__item {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            iframe {
+                display: block;
+                width: 560px;
+                height: 315px;
+            }
+        }
+    }
+    .main__music {
+        display: block;
+        width: 100%;
+        .music__item {
+            display: block;
+            width: 100vw;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            .item__header {
+                display: block;
+                width: 100%;
+                height: 50%;
+                .header__title {
+                    display: block;
+                    width: 100%;
+                    margin-bottom: $space10;
+                    font-size: $subtitle;
+                    line-height: $subtitleLH;
+                    font-weight: $bold;
+                    color: $text;
+                }
+                .header__artist {
+                    display: block;
+                    width: 100%;
+                    margin-bottom: $space10;
+                    font-size: $paragraph;
+                    line-height: $paragraphLH;
+                    font-weight: $normal;  
+                    font-style: $normal;
+                    color: $text;
+                }
+                .header__album {
+                    display: block;
+                    width: 100%;
+                    margin-bottom: $space10;
+                    font-size: $paragraph;
+                    line-height: $paragraphLH;
+                    font-weight: $normal;  
+                    font-style: $normal;
+                    color: $text;
+                }
+            }
+            .item__social {
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                height: 50%;
+                .social__media {
+                    display: inline-block;
+                    list-style: none;
+                    li {
+                        display: inline-block;
+                        cursor: pointer;
+                        a {
+                            display: block;
+                            margin-right: $space15;
+                            background-position: center;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                        }
+                    }
+                    .yt a {
+                        background-image: url($url+'/assets/brands/instagram/icon.svg');
+                    }
+                    .sp a {
+                        background-image: url($url+'/assets/brands/spotify/icon.svg');
+                    }
+                    .ap a {
+                        background-image: url($url+'/assets/brands/apple_music/icon.svg');
+                    }
+                }
+            }
+        }
+        .music__more {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: $space20;
+            .more__button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: $space10 $space20;
+                background-color: $blue;
+                border-radius: $radius;
+                a {
+                    font-size: $paragraph;
+                    line-height: $paragraphLH;
+                    font-weight: bold;  
+                    font-style: $normal;
+                    color: $text;
+                }
+            }
+        }
+    }
+    .main__bio {
+        display: block;
+        width: 100%;
+        .bio__item {
+            display: block;
+            width: 100%;
+            .item__image {
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .item__text {
+                .text__quote {
+                    display: inline-block;
+                    width: 150px;
+                    height: 150px;
+                    position: absolute;
+                    top: -25px;
+                    left: -25px;
+                    background-image: url("../../../assets/icons/quotes/icon.svg");
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+                .text__paragraph {
+                    display: inline-block;
+                    width: 100%;
+                    p {
+                        display: block;
+                        margin-bottom: $space10;
+                    }
+                }
+            }
+        }
+    }
+    .main__thanks {
+        display: block;
+        width: 100%;
+        h3 {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+        figure {
+            display: block;
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            img {
+                display: block;
+                width: 300px;
+                height: 300px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+    main {
+        margin-bottom: $space30;
+        .main__welcome {
+            .welcome__logo {
+                display: block;
+                width: 100vw;
+                height: 100vh;
+                img {
+                    margin-top: 60px;
+                }
+                .logo__shadow {
+                    display: block;
+                    width: 70%;
+                    height: 100vh;
+                    position: absolute;
+                    top: 43%;
+                    left: 50%;
+                    transform: translate(-50%, -50%)
+                }
+                .logo__item {
+                    display: block;
+                    width: 40%;
+                    height: 70vh;
+                    position: absolute;
+                    top: 48%;
+                    left: 49%;
+                    transform: translate(-50%, -50%)
+                }
+            }
+        }
+        .main__music {
+            margin-bottom: $space75;
+            .music__item {
+                height: 450px;
+                padding: $space20;
+                .item__social {
+                    .social__media {
+                        height: 45px;
+                        li {
+                            a {
+                               width: 45px;
+                               height: 45px; 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .main__bio {
+            .bio__item {
+                height: 350px;
+                .item__image {
+                    display: inline-block;
+                    width: 30%;
+                    height: 100%;
+                    float: left;
+                }
+                .item__text {
+                    display: inline-block;
+                    width: 70%;
+                    height: 100%;
+                    padding: $space20;
+                    position: relative;
+                    float: right;
+                    .text__quote {
+                        
+                    }
+                    .text__paragraph {
+                        
+                        p {
+                            width: 85%;
+                        }
+                    }
+                }
+            }
+        }
+        .main__thanks {
+            margin-top: $space50;
+        }
+    }
+}
+@media screen and (max-width:767px) {
+    main {
+        .main__welcome {
+            display: block;
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            .welcome__logo {
+                display: block;
+                width: 100vw;
+                height: 100vh;
+                img {
+                    margin-top: 60px;
+                }
+                .logo__shadow {
+                    display: block;
+                    width: 100%;
+                    height: 100vh;
+                    position: absolute;
+                    top: 39%;
+                    left: 50%;
+                    transform: translate(-50%, -50%)
+                }
+                .logo__item {
+                    display: block;
+                    width: 65%;
+                    height: 70vh;
+                    position: absolute;
+                    top: 43%;
+                    left: 49%;
+                    transform: translate(-50%, -50%)
+                }
+            }
+        }
+        .main__music {
+            margin-bottom: $space30;
+            .music__item {
+                height: 250px;
+                padding: $space10;
+                .item__social {
+                    .social__media {
+                        height: 35px;
+                        li {
+                            a {
+                               width: 35px;
+                               height: 35px; 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .main__bio {
+            .bio__item {
+                .item__image {
+                    display: block;
+                    width: 100vw;
+                    height: 250px;
+                }
+                .item__text {
+                    display: block;
+                    width: 100vw;
+                    padding: $space20;
+                    position: relative;
+                    .text__paragraph {
+                        margin-top: $space20;
+                    }
+                }
+            }
+        }
+        .main__thanks {
+            margin-top: $space30;
+            h3 {
+                margin-bottom: $space10;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:767px) and (max-width:1024px) {
+    main {
+        .main__welcome {
+            display: block;
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            .welcome__logo {
+                display: block;
+                width: 100vw;
+                height: 100vh;
+                img {
+                    margin-top: 60px;
+                }
+                .logo__shadow {
+                    display: block;
+                    width: 100%;
+                    height: 100vh;
+                    position: absolute;
+                    top: 43%;
+                    left: 50%;
+                    transform: translate(-50%, -50%)
+                }
+                .logo__item {
+                    display: block;
+                    width: 65%;
+                    height: 70vh;
+                    position: absolute;
+                    top: 48%;
+                    left: 49%;
+                    transform: translate(-50%, -50%)
+                }
+            }
+        }
+        .main__music {
+            margin-bottom: $space30;
+            .music__item {
+                height: 350px;
+                padding: $space10;
+                .item__social {
+                    .social__media {
+                        height: 40px;
+                        li {
+                            a {
+                               width: 40px;
+                               height: 40px; 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .main__bio {
+            .bio__item {
+                height: 350px;
+                .item__image {
+                    display: inline-block;
+                    width: 40%;
+                    height: 100%;
+                    float: left;
+                }
+                .item__text {
+                    display: inline-block;
+                    width: 60%;
+                    height: 100%;
+                    padding: $space20;
+                    position: relative;
+                    float: right;
+                    .text__quote {
+                        
+                    }
+                    .text__paragraph {
+                        
+                        p {
+                            width: 85%;
+                        }
+                    }
+                }
+            }
+        }
+        .main__thanks {
+            margin-top: $space30;
+            h3 {
+                margin-bottom: $space10;
+            }
+        }
+    }
+} 

@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Nueva canción</title>
+    </head>
+    <style>
+        h1 {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 30px;
+        }
+    </style>
+    <body>
+        <figure style="display: block;width: 200px;height: 200px;margin-bottom: 30px;">
+            <img style="display: block;width: 200px;height: 200px;" src="http://localhost/lander_rey/media/images/logo/logo.png" alt="Logo Lander Rey" srcset="http://localhost/lander_rey/media/images/logo/logo.png">
+        </figure>
+        <section class="main__title" style="display: block;width: 600px;padding: 20px;background-color:#f1f1f1;color:rgba(22,24,35,0.75);font-size: 28px;font-weight: bold;">
+            <h1 style="width: 100%;">Lander Rey ha lanzado una nueva canción</h1>
+        </section>
+        <section class="main__content" style="display: block;width: 600px;padding: 20px;background-color:#f8f8f8;color:rgba(22,24,35,0.75);">
+            <h2 class="content__title" style="width: 100%;font-size: 18px;font-weight: bold;">Escucha la nueva canción de Lander Rey llamada '.$name.'</h2>  
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LJGbyRCW5cs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                 
+            <div class="content__social" style="display: flex;justify-content: space-evenly;width:100%;justify-content:space-evenly;">
+                <div class="social__button"style="display:inline-flex;justify-content:center;align-items:center;align-items: center;padding: 10px;background-color: #000;"><a style="color: #fff;text-decoration: none;" href="'.$sp.'">Escuchar en Spotify</a></div>
+                <div class="social__button"style="display:inline-flex;justify-content:center;align-items:center;align-items: center;padding: 10px;background-color: #000;"><a style="color: #fff;text-decoration: none;" href="'.$ap.'">Escuchar en Apple Music</a></div>
+            </div>
+        </section>
+    </body>
+</html>

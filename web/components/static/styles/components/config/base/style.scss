@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: $font;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body {
+    display: block;
+    background-color: $page;
+    color: $text;
+}
+header{
+    display: block;
+    width: 100%;
+}
+main {
+    display: block;
+    margin-bottom: $space50;
+}
+footer{
+    display: block;
+    width: 100%;
+}
+h1 {
+    font-size: $title;
+    line-height: $titleLH;
+    font-weight: $bold;
+    color: $text;
+}
+h2 {
+    font-size: $title2;
+    line-height: $title2LH;
+    font-weight: $extraBold;
+    color: $text;
+}
+h3 {
+    font-size: $subtitle;
+    line-height: $subtitleLH;
+    font-weight: $bold;
+    color: $text;
+}
+h4 {
+    font-size: $subtitle2;
+    line-height: $subtitle2LH;
+    font-weight: $bold;
+    color: $text;
+}
+h5 {
+    font-size: $subtitle2;
+    line-height: $subtitle2LH;
+    font-weight: $bold;
+    color: $text;
+}
+h6 {
+    font-size: $subtitle2;
+    line-height: $subtitle2LH;
+    font-weight: $bold;
+    color: $text;
+}
+p {
+    font-size: $paragraph;
+    line-height: $paragraphLH;
+    font-weight: $normal;  
+    font-style: $normal;
+    color: $text;
+}
+button {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: $paragraph;
+    line-height: $paragraphLH;
+    font-weight: $normal;  
+    font-style: $normal;
+}
+ul {
+    list-style: none;
+}
+li {
+    font-size: $paragraph;
+    line-height: $paragraphLH;
+    font-weight: $normal;  
+    font-style: $normal;
+}
+a {
+    text-decoration: none;
+    color: $text;
+}

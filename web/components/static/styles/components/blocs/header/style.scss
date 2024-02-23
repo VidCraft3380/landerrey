@@ -1,0 +1,366 @@
+header {
+    position: relative;
+    height: 60px;
+    .header__logo {
+        display: inline-block;
+        width: 160px;
+        height: 60px;
+        float: left;
+        img {
+            width: 160px;
+            height: 120px;
+            position: absolute;
+            top: -30px;
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+    header {
+        padding: 0 $space20;
+        .header__menus {
+            display: inline-flex;
+            align-items: center;
+            height: 60px;
+            float: right;
+            .menus__item {
+                display: inline-block;
+            }
+            .menus__nav {
+                display: inline-block;
+                margin-right: $space30;
+                .nav__bar {
+                    display: block;
+                    ul {
+                        display: block;
+                        list-style: none;
+                        li {
+                            display: inline-block;
+                            padding: $space10;
+                            a {
+                                font-weight: $bold;
+                            }
+                        }
+                        .items__item:hover {
+                            border-bottom: $blue $border3;
+                        }
+                    }
+                }
+            }
+            .menus__social {
+                display: inline-block;
+                .social__list {
+                    display: flex;
+                    align-items: center;
+                    height: 60px;
+                    list-style: none;
+                    li {
+                        display: inline-block;
+                        cursor: pointer;
+                        a {
+                            display: block;
+                            width: 30px;
+                            height: 30px;
+                            margin-right: $space15;
+                            background-position: center;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                        }
+                    }
+                    .list__ig a {
+                        background-image: url($url+'/assets/brands/instagram/icon.svg');
+                    }
+                    .list__tt a {
+                        background-image: url($url+'/assets/brands/tiktok/icon.svg');
+                    }
+                    .list__yt a {
+                        background-image: url($url+'/assets/brands/youtube/icon.svg');
+                    }
+                    .list__sp a {
+                        background-image: url($url+'/assets/brands/spotify/icon.svg');
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    header {
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 60px;
+        padding: 0 $space10;
+        background-color: none;
+        transition: all 1.5s ease-in;
+        .header__logo {
+            width: 90%;
+        }
+        .menu__button-exit {
+            display: none;
+        }
+        .menu__button {
+            display: inline-block;
+            width: 25px;
+            height: 20px;
+            .button__item {
+                width: 100%;
+                height: 100%;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-image: url($url+'/assets/icons/menu/icon.svg');
+            }
+        }
+        .header__menus {
+            height: 0;
+            visibility: hidden;
+            transition: all 1.5s ease-in-out;
+            .menus__nav {
+                display: block;
+                width: 0;
+                margin-top:0;
+                height: 0;
+                nav {
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    ul {
+                        display: block;
+                        width: 0;
+                        height: 0;
+                        list-style: none;
+                        li {
+                            display: block;
+                            width: 0;
+                            margin-bottom: 0;
+                            a {
+                                display: block;
+                                width: 0;
+                                font-size: 0;
+                                line-height: 0;
+                                font-weight: $bold;
+                                color: $text;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+            .menus__social {
+                display: flex;
+                justify-content: center;
+                width: 0;
+                height: 0;
+                .social__list {
+                    display: flex;
+                    align-items: center;
+                    list-style: none;
+                    li {
+                        display: inline-block;
+                        cursor: pointer;
+                        a {
+                            display: block;
+                            width: 0;
+                            height: 0;
+                            margin-right: $space15;
+                            background-position: center;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                        }
+                    }
+                    .list__ig a {
+                        background-image: url($url+'/assets/brands/instagram/icon.svg');
+                    }
+                    .list__tt a {
+                        background-image: url($url+'/assets/brands/tiktok/icon.svg');
+                    }
+                    .list__yt a {
+                        background-image: url($url+'/assets/brands/youtube/icon.svg');
+                    }
+                    .list__sp a {
+                        background-image: url($url+'/assets/brands/spotify/icon.svg');
+                    }
+                }
+            }
+            .menus__item {
+                width: 0;
+            }
+        }
+    }
+    .header__menus-open {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        background-color: $gray80;
+        position: relative;
+        transition: all 1.5s ease-in;
+        .header__logo {
+            display: inline-block;
+            width: 90%;
+        }
+        .menu__button-exit {
+            display: inline-block;
+            width: 25px;
+            height: 20px;
+            margin-top: $space20;
+            float: right;
+            .button-exit__item {
+                width: 100%;
+                height: 100%;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-image: url($url+'/assets/icons/x/icon.svg');
+            }
+        }
+        .menu__button {
+            display: none;
+        }
+        .header__menus {
+            display: inline-block;
+            width: 100vw;
+            height: 100vh;
+            visibility: visible;
+            transition: all 1.5s ease-in;
+            .menus__nav {
+                display: block;
+                width: 100%;
+                margin-top: $space20;
+                height: 50%;
+                nav {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    ul {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        list-style: none;
+                        li {
+                            display: block;
+                            width: 100%;
+                            margin-bottom: $space15;
+                            a {
+                                display: block;
+                                width: 100%;
+                                font-size: $subtitle2;
+                                line-height: $subtitle2LH;
+                                font-weight: $bold;
+                                color: $text;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+            .menus__social {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                height: 50%;
+                .social__list {
+                    display: flex;
+                    align-items: center;
+                    list-style: none;
+                    li {
+                        display: inline-block;
+                        cursor: pointer;
+                        a {
+                            display: block;
+                            width: 30px;
+                            height: 30px;
+                            margin-right: $space15;
+                            background-position: center;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                        }
+                    }
+                    .list__ig a {
+                        background-image: url($url+'/assets/brands/instagram/icon.svg');
+                    }
+                    .list__tt a {
+                        background-image: url($url+'/assets/brands/tiktok/icon.svg');
+                    }
+                    .list__yt a {
+                        background-image: url($url+'/assets/brands/youtube/icon.svg');
+                    }
+                    .list__sp a {
+                        background-image: url($url+'/assets/brands/spotify/icon.svg');
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:767px) and (max-width:1024px) {
+    header {
+        padding: 0 $space20;
+        .header__menus {
+            display: inline-flex;
+            align-items: center;
+            height: 60px;
+            float: right;
+            .menus__item {
+                display: inline-block;
+            }
+            .menus__nav {
+                display: inline-block;
+                margin-right: $space30;
+                .nav__bar {
+                    display: block;
+                    ul {
+                        display: block;
+                        list-style: none;
+                        li {
+                            display: inline-block;
+                            padding: $space10;
+                            a {
+                                font-weight: $bold;
+                            }
+                        }
+                        .items__item:hover {
+                            border-bottom: $blue $border3;
+                        }
+                    }
+                }
+            }
+            .menus__social {
+                display: inline-block;
+                .social__list {
+                    display: flex;
+                    align-items: center;
+                    height: 60px;
+                    list-style: none;
+                    li {
+                        display: inline-block;
+                        cursor: pointer;
+                        a {
+                            display: block;
+                            width: 30px;
+                            height: 30px;
+                            margin-right: $space15;
+                            background-position: center;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                        }
+                    }
+                    .list__ig a {
+                        background-image: url($url+'/assets/brands/instagram/icon.svg');
+                    }
+                    .list__tt a {
+                        background-image: url($url+'/assets/brands/tiktok/icon.svg');
+                    }
+                    .list__yt a {
+                        background-image: url($url+'/assets/brands/youtube/icon.svg');
+                    }
+                    .list__sp a {
+                        background-image: url($url+'/assets/brands/spotify/icon.svg');
+                    }
+                }
+            }
+        }
+    }
+}

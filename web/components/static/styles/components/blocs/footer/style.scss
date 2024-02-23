@@ -1,0 +1,46 @@
+footer {
+    display: block;
+    width: 100%;
+    padding-bottom: $space75;
+    h3 {
+        display: block;
+        width: 100%;
+        margin-bottom: $space20;
+        text-align: center;
+    }
+    .footer__social {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        ul {
+            display: inline-block;
+            height: 30px;
+            list-style: none;
+            li {
+                display: inline-block;
+                cursor: pointer;
+                a {
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    margin-right: $space15;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+            }
+            .list__ig a {
+                background-image: url($url+'/assets/brands/instagram/icon.svg');
+            }
+            .list__tt a {
+                background-image: url($url+'/assets/brands/tiktok/icon.svg');
+            }
+            .list__yt a {
+                background-image: url($url+'/assets/brands/youtube/icon.svg');
+            }
+            .list__sp a {
+                background-image: url($url+'/assets/brands/spotify/icon.svg');
+            }
+        }
+    }
+}

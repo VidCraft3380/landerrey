@@ -1,0 +1,720 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Tofino", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  display: block;
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  display: block;
+  width: 100%;
+}
+
+main {
+  display: block;
+  margin-bottom: 50px;
+}
+
+footer {
+  display: block;
+  width: 100%;
+}
+
+h1 {
+  font-size: 31px;
+  line-height: 33px;
+  font-weight: bold;
+  color: #fff;
+}
+
+h2 {
+  font-size: 35px;
+  line-height: 49px;
+  font-weight: 800;
+  color: #fff;
+}
+
+h3 {
+  font-size: 31px;
+  line-height: 37px;
+  font-weight: bold;
+  color: #fff;
+}
+
+h4 {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+
+h5 {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+
+h6 {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+
+p {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  font-style: normal;
+  color: #fff;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header {
+  position: relative;
+  height: 60px;
+}
+header .header__logo {
+  display: inline-block;
+  width: 160px;
+  height: 60px;
+  float: left;
+}
+header .header__logo img {
+  width: 160px;
+  height: 120px;
+  position: absolute;
+  top: -30px;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 0 20px;
+  }
+  header .header__menus {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 60px;
+    float: right;
+  }
+  header .header__menus .menus__item {
+    display: inline-block;
+  }
+  header .header__menus .menus__nav {
+    display: inline-block;
+    margin-right: 30px;
+  }
+  header .header__menus .menus__nav .nav__bar {
+    display: block;
+  }
+  header .header__menus .menus__nav .nav__bar ul {
+    display: block;
+    list-style: none;
+  }
+  header .header__menus .menus__nav .nav__bar ul li {
+    display: inline-block;
+    padding: 10px;
+  }
+  header .header__menus .menus__nav .nav__bar ul li a {
+    font-weight: bold;
+  }
+  header .header__menus .menus__nav .nav__bar ul .items__item:hover {
+    border-bottom: #135487 3px solid;
+  }
+  header .header__menus .menus__social {
+    display: inline-block;
+  }
+  header .header__menus .menus__social .social__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 60px;
+    list-style: none;
+  }
+  header .header__menus .menus__social .social__list li {
+    display: inline-block;
+    cursor: pointer;
+  }
+  header .header__menus .menus__social .social__list li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  header .header__menus .menus__social .social__list .list__ig a {
+    background-image: url("../../../assets/brands/instagram/icon.svg");
+  }
+  header .header__menus .menus__social .social__list .list__tt a {
+    background-image: url("../../../assets/brands/tiktok/icon.svg");
+  }
+  header .header__menus .menus__social .social__list .list__yt a {
+    background-image: url("../../../assets/brands/youtube/icon.svg");
+  }
+  header .header__menus .menus__social .social__list .list__sp a {
+    background-image: url("../../../assets/brands/spotify/icon.svg");
+  }
+}
+@media screen and (max-width: 767px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    height: 60px;
+    padding: 0 10px;
+    background-color: none;
+    -webkit-transition: all 1.5s ease-in;
+    transition: all 1.5s ease-in;
+  }
+  header .header__logo {
+    width: 90%;
+  }
+  header .menu__button-exit {
+    display: none;
+  }
+  header .menu__button {
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+  }
+  header .menu__button .button__item {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../../../assets/icons/menu/icon.svg");
+  }
+  header .header__menus {
+    height: 0;
+    visibility: hidden;
+    -webkit-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+  }
+  header .header__menus .menus__nav {
+    display: block;
+    width: 0;
+    margin-top: 0;
+    height: 0;
+  }
+  header .header__menus .menus__nav nav {
+    display: block;
+    width: 0;
+    height: 0;
+  }
+  header .header__menus .menus__nav nav ul {
+    display: block;
+    width: 0;
+    height: 0;
+    list-style: none;
+  }
+  header .header__menus .menus__nav nav ul li {
+    display: block;
+    width: 0;
+    margin-bottom: 0;
+  }
+  header .header__menus .menus__nav nav ul li a {
+    display: block;
+    width: 0;
+    font-size: 0;
+    line-height: 0;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+  }
+  header .header__menus .menus__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 0;
+    height: 0;
+  }
+  header .header__menus .menus__social .social__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style: none;
+  }
+  header .header__menus .menus__social .social__list li {
+    display: inline-block;
+    cursor: pointer;
+  }
+  header .header__menus .menus__social .social__list li a {
+    display: block;
+    width: 0;
+    height: 0;
+    margin-right: 15px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  header .header__menus .menus__social .social__list .list__ig a {
+    background-image: url("../../../assets/brands/instagram/icon.svg");
+  }
+  header .header__menus .menus__social .social__list .list__tt a {
+    background-image: url("../../../assets/brands/tiktok/icon.svg");
+  }
+  header .header__menus .menus__social .social__list .list__yt a {
+    background-image: url("../../../assets/brands/youtube/icon.svg");
+  }
+  header .header__menus .menus__social .social__list .list__sp a {
+    background-image: url("../../../assets/brands/spotify/icon.svg");
+  }
+  header .header__menus .menus__item {
+    width: 0;
+  }
+
+  .header__menus-open {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: #262626;
+    position: relative;
+    -webkit-transition: all 1.5s ease-in;
+    transition: all 1.5s ease-in;
+  }
+  .header__menus-open .header__logo {
+    display: inline-block;
+    width: 90%;
+  }
+  .header__menus-open .menu__button-exit {
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    margin-top: 20px;
+    float: right;
+  }
+  .header__menus-open .menu__button-exit .button-exit__item {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../../../assets/icons/x/icon.svg");
+  }
+  .header__menus-open .menu__button {
+    display: none;
+  }
+  .header__menus-open .header__menus {
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+    visibility: visible;
+    -webkit-transition: all 1.5s ease-in;
+    transition: all 1.5s ease-in;
+  }
+  .header__menus-open .header__menus .menus__nav {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    height: 50%;
+  }
+  .header__menus-open .header__menus .menus__nav nav {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .header__menus-open .header__menus .menus__nav nav ul {
+    display: block;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+  }
+  .header__menus-open .header__menus .menus__nav nav ul li {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .header__menus-open .header__menus .menus__nav nav ul li a {
+    display: block;
+    width: 100%;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+  }
+  .header__menus-open .header__menus .menus__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 50%;
+  }
+  .header__menus-open .header__menus .menus__social .social__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style: none;
+  }
+  .header__menus-open .header__menus .menus__social .social__list li {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .header__menus-open .header__menus .menus__social .social__list li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .header__menus-open .header__menus .menus__social .social__list .list__ig a {
+    background-image: url("../../../assets/brands/instagram/icon.svg");
+  }
+  .header__menus-open .header__menus .menus__social .social__list .list__tt a {
+    background-image: url("../../../assets/brands/tiktok/icon.svg");
+  }
+  .header__menus-open .header__menus .menus__social .social__list .list__yt a {
+    background-image: url("../../../assets/brands/youtube/icon.svg");
+  }
+  .header__menus-open .header__menus .menus__social .social__list .list__sp a {
+    background-image: url("../../../assets/brands/spotify/icon.svg");
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  header {
+    padding: 0 20px;
+  }
+  header .header__menus {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 60px;
+    float: right;
+  }
+  header .header__menus .menus__item {
+    display: inline-block;
+  }
+  header .header__menus .menus__nav {
+    display: inline-block;
+    margin-right: 30px;
+  }
+  header .header__menus .menus__nav .nav__bar {
+    display: block;
+  }
+  header .header__menus .menus__nav .nav__bar ul {
+    display: block;
+    list-style: none;
+  }
+  header .header__menus .menus__nav .nav__bar ul li {
+    display: inline-block;
+    padding: 10px;
+  }
+  header .header__menus .menus__nav .nav__bar ul li a {
+    font-weight: bold;
+  }
+  header .header__menus .menus__nav .nav__bar ul .items__item:hover {
+    border-bottom: #135487 3px solid;
+  }
+  header .header__menus .menus__social {
+    display: inline-block;
+  }
+  header .header__menus .menus__social .social__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 60px;
+    list-style: none;
+  }
+  header .header__menus .menus__social .social__list li {
+    display: inline-block;
+    cursor: pointer;
+  }
+  header .header__menus .menus__social .social__list li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  header .header__menus .menus__social .social__list .list__ig a {
+    background-image: url("../../../assets/brands/instagram/icon.svg");
+  }
+  header .header__menus .menus__social .social__list .list__tt a {
+    background-image: url("../../../assets/brands/tiktok/icon.svg");
+  }
+  header .header__menus .menus__social .social__list .list__yt a {
+    background-image: url("../../../assets/brands/youtube/icon.svg");
+  }
+  header .header__menus .menus__social .social__list .list__sp a {
+    background-image: url("../../../assets/brands/spotify/icon.svg");
+  }
+}
+footer {
+  display: block;
+  width: 100%;
+  padding-bottom: 75px;
+}
+footer h3 {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+footer .footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+footer .footer__social ul {
+  display: inline-block;
+  height: 30px;
+  list-style: none;
+}
+footer .footer__social ul li {
+  display: inline-block;
+  cursor: pointer;
+}
+footer .footer__social ul li a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+footer .footer__social ul .list__ig a {
+  background-image: url("../../../assets/brands/instagram/icon.svg");
+}
+footer .footer__social ul .list__tt a {
+  background-image: url("../../../assets/brands/tiktok/icon.svg");
+}
+footer .footer__social ul .list__yt a {
+  background-image: url("../../../assets/brands/youtube/icon.svg");
+}
+footer .footer__social ul .list__sp a {
+  background-image: url("../../../assets/brands/spotify/icon.svg");
+}
+
+main h1 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+main .main__music {
+  display: block;
+  width: 100%;
+}
+main .main__music .music__item {
+  display: block;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main .main__music .music__item .item__header {
+  display: block;
+  width: 100%;
+  height: 50%;
+}
+main .main__music .music__item .item__header .header__title {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 31px;
+  line-height: 37px;
+  font-weight: bold;
+  color: #fff;
+}
+main .main__music .music__item .item__header .header__artist {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  font-style: normal;
+  color: #fff;
+}
+main .main__music .music__item .item__header .header__album {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  font-style: normal;
+  color: #fff;
+}
+main .main__music .music__item .item__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 50%;
+}
+main .main__music .music__item .item__social .social__media {
+  display: inline-block;
+  list-style: none;
+}
+main .main__music .music__item .item__social .social__media li {
+  display: inline-block;
+  cursor: pointer;
+}
+main .main__music .music__item .item__social .social__media li a {
+  display: block;
+  margin-right: 15px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main .main__music .music__item .item__social .social__media .yt a {
+  background-image: url("../../../assets/brands/instagram/icon.svg");
+}
+main .main__music .music__item .item__social .social__media .sp a {
+  background-image: url("../../../assets/brands/spotify/icon.svg");
+}
+main .main__music .music__item .item__social .social__media .ap a {
+  background-image: url("../../../assets/brands/apple_music/icon.svg");
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  main h1 {
+      margin-bottom: 30px;
+  }
+  main .main__music {
+    margin-bottom: 75px;
+  }
+  main .main__music .music__item {
+    height: 450px;
+    padding: 20px;
+  }
+  main .main__music .music__item .item__social .social__media {
+    height: 45px;
+  }
+  main .main__music .music__item .item__social .social__media li a {
+    width: 45px;
+    height: 45px;
+  }
+}
+@media screen and (max-width: 767px) {
+  main {
+    margin-top: 20px;
+  }
+  main h1 {
+      margin-bottom:15px;
+    }
+  main .main__music {
+    margin-bottom: 30px;
+  }
+  main .main__music .music__item {
+    height: 250px;
+    padding: 10px;
+  }
+  main .main__music .music__item .item__social .social__media {
+    height: 35px;
+  }
+  main .main__music .music__item .item__social .social__media li a {
+    width: 35px;
+    height: 35px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  main {
+    margin-top: 30px;
+  }main h1 {
+      margin-bottom:20px;
+    }
+  main .main__music {
+    margin-bottom: 30px;
+  }
+  main .main__music .music__item {
+    height: 350px;
+    padding: 10px;
+  }
+  main .main__music .music__item .item__social .social__media {
+    height: 40px;
+  }
+  main .main__music .music__item .item__social .social__media li a {
+    width: 40px;
+    height: 40px;
+  }
+}

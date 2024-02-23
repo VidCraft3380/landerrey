@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-family: sans-serif;
+    color: #fff;
+}
+body {
+    background-color: $gray80;
+}
+input {
+    outline: none;
+}
+button {
+    color: #fff;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    font-size: $paragraph;
+    font-weight: bold;
+}
